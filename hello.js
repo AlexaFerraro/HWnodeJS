@@ -1,13 +1,11 @@
-// const http = require('http');
-// http.createServer(function(request, response) {
-//     response.end('Hello NodeJS');
-// }).listen(3000, "127.0.0.1", function() {
-//     console.log('Сервер начал прослушивание запросов на порту 3000');
-// });
+const http = require('http');
+var HttpPage = require('./http');
+var httpConsole = new HttpPage(http);
 
 const os = require('os');
 const greeting = require('./greeting');
 const User = require('./user');
+const SoundPage = require('./sound');
 
 var userName = os.userInfo().username;
 var alex = new User(userName, 32);
@@ -17,6 +15,3 @@ console.log(greeting.getMessage(userName));
 
 alex.displayInfo();
 alex.sayHi();
-
-console.log(userName);
-

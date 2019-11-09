@@ -1,7 +1,7 @@
 const sound = require('sound');
 const jazz = require('jazz-midi');
 var midi = new jazz.MIDI();
-const os = require('os');
+//const os = require('os');
 var name = midi.MidiOutOpen(0);
 
 var schema = {

@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "main": "greeting.js",
   "devDependencies": {
-    "pm2": "^4.1.2"
+    "pm2": "^5.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
